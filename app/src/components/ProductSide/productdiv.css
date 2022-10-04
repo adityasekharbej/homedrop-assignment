@@ -1,0 +1,124 @@
+.productdiv {
+  /* border: 1px solid red; */
+  width: 85%;
+  box-sizing: border-box;
+  background: #f1f5f9;
+  padding: 30px 20px;
+}
+.top-bar {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.top-bar > p {
+  font-size: 24px;
+  font-weight: 600;
+  padding: 0;
+  margin: 0;
+}
+.add-cart-btn {
+  border: none;
+  background: #3b82f6;
+  border-radius: 4px;
+  color: #fff;
+  padding: 12px;
+  cursor: pointer;
+}
+.product-container {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 4px;
+}
+.product-nav {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #e2e8f0;
+  padding: 10px 15px;
+}
+.product-nav p {
+  margin: 0;
+}
+.headings,
+.buttons {
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+.headings {
+  justify-content: flex-start;
+  gap: 20px;
+}
+.headings > p:first-child {
+  color: #2d68fe;
+  text-decoration: underline;
+}
+.buttons {
+  gap: 10px;
+  justify-content: flex-end;
+}
+.display-style {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  border: 1px solid #e2e8f0;
+  border-radius: 4px;
+  gap: 10px;
+  cursor: pointer;
+  font-size: 14px;
+}
+.display-style > .fa-bars {
+  background: #e9f1ff;
+  border-radius: 2px;
+  padding: 5px;
+  font-size: 14px;
+}
+.button-nav {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px;
+  flex-wrap: wrap;
+}
+
+.search-div-nav {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  padding: 3px 10px;
+}
+
+.search-div-nav > i {
+  color: #94a3b8;
+}
+
+.search-div-nav input {
+  border: none;
+  padding: 5px;
+}
+.search-div-nav input:focus {
+  border: none;
+  outline: none;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+@media all and (min-width: 381px) and (max-width: 700px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media all and (min-width: 50px) and (max-width: 380px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,73 @@
+.cardDiv {
+  display: flex;
+  padding: 10px;
+  background: #ffffff;
+  border: 1px solid rgba(173, 173, 173, 0.25);
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.16);
+  border-radius: 4px;
+  box-sizing: border-box;
+  justify-content: space-between;
+}
+.content {
+  display: flex;
+  gap: 10px;
+}
+.imageDiv {
+  border: 1px solid #e2e8f0;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 5px;
+}
+.imageDiv > img {
+  max-width: 124px;
+  max-height: 80px;
+}
+.textDiv {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.textDiv > p,
+.priceDiv > p {
+  margin: 0;
+  padding: 0;
+  margin: 3px 0;
+  font-size: 14px;
+}
+.priceDiv {
+  display: flex;
+  gap: 10px;
+}
+.brand {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 18px;
+  color: #64748b;
+}
+.strike {
+  text-decoration: line-through;
+  color: #94a3b8;
+}
+
+.modal {
+  text-align: left;
+  display: none;
+  z-index: 100;
+  background: #ffffff;
+  box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.12);
+  border-radius: 1px;
+  padding: 5px 10px;
+  box-sizing: border-box;
+}
+
+.modal>p{
+    margin: 0;
+    margin-bottom: 6px;
+}
+.fa-ellipsis-vertical{
+    cursor: pointer;
+}
